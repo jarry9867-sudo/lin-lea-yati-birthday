@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d1c">
+<title>For Lin Lae Yati Tun ✦</title>
+<style>
+:root{--bg:#100d1c;--panel:#1b172b;--gold:#e8c98b;--cream:#fff7e8;--muted:#b9afc8;--line:rgba(232,201,139,.22)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -15%,#41305c 0%,#171226 42%,var(--bg) 78%);color:var(--cream);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+button{font:inherit}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#f7dfae;opacity:.55;animation:twinkle 3.5s infinite ease-in-out}
+@keyframes twinkle{50%{opacity:.12;transform:scale(.6)}}
+main{position:relative;z-index:1}
+section{min-height:100svh;padding:84px 22px;display:flex;align-items:center;justify-content:center}
+.wrap{width:min(920px,100%);margin:auto;text-align:center}
+.eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+h1,h2,p{margin-top:0}
+h1{font-size:clamp(42px,9vw,82px);line-height:1.02;font-weight:400;letter-spacing:-.045em;margin:22px 0}
+h2{font-size:clamp(34px,7vw,58px);font-weight:400;line-height:1.08;margin:15px 0 20px}
+.gold{color:var(--gold)}
+.lead{font:15px/1.9 Arial,sans-serif;color:var(--muted);max-width:560px;margin:0 auto 30px}
+.btn{border:1px solid var(--gold);background:linear-gradient(135deg,rgba(232,201,139,.17),rgba(232,201,139,.04));color:var(--cream);padding:14px 23px;border-radius:999px;cursor:pointer;letter-spacing:.08em;font:12px Arial,sans-serif;transition:.25s}
+.btn:hover{background:rgba(232,201,139,.22);transform:translateY(-2px);box-shadow:0 8px 30px #0005}
+.rule{width:74px;height:1px;background:var(--gold);margin:26px auto}
+.hero-card{border:1px solid var(--line);border-radius:28px;padding:clamp(28px,6vw,58px) 22px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.015));box-shadow:0 24px 80px #0005;backdrop-filter:blur(12px)}
+.envelope{width:104px;height:76px;margin:30px auto 24px;position:relative;border:1px solid var(--gold);border-radius:7px;background:linear-gradient(145deg,#46365d,#211a33);cursor:pointer;box-shadow:0 12px 32px #0005}
+.envelope:before{content:"";position:absolute;left:8px;right:8px;top:0;height:49px;border-bottom:1px solid var(--gold);background:linear-gradient(135deg,transparent 49%,rgba(232,201,139,.75) 50%,transparent 51%),linear-gradient(225deg,transparent 49%,rgba(232,201,139,.75) 50%,transparent 51%);clip-path:polygon(0 0,100% 0,50% 100%)}
+.envelope span{position:absolute;left:0;right:0;bottom:8px;color:var(--gold);font-size:20px}
+.note{max-width:650px;margin:28px auto 0;padding:30px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.045);font-size:18px;line-height:1.9;color:#eee4d4}
+.note p:last-child{margin-bottom:0}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:35px auto 0;max-width:720px}
+.photo{aspect-ratio:4/5;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(145deg,#3a2d4e,#171222);position:relative;display:flex;align-items:center;justify-content:center;color:var(--gold);font:12px Arial,sans-serif;letter-spacing:.12em}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;background:linear-gradient(145deg,rgba(255,255,255,.07),transparent)}
+.final-gift{font-size:70px;display:block;margin:20px auto;filter:drop-shadow(0 8px 22px #0008);animation:bob 2.6s infinite ease-in-out}
+@keyframes bob{50%{transform:translateY(-9px)}}
+footer{padding:25px;text-align:center;color:#8e849e;font:11px Arial,sans-serif;letter-spacing:.12em}
+.hidden{display:none!important}
+.fade{animation:fade .8s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:5}
+@media(max-width:520px){section{padding:70px 17px}.gallery{gap:10px}.note{padding:22px;font-size:16px}.hero-card{border-radius:22px}}
+</style>
+</head>
+<body>
+<div id="stars"></div><canvas id="confetti"></canvas>
+<main>
+<section id="home">
+ <div class="wrap hero-card fade">
+  <div class="eyebrow">A little something made for you</div>
+  <h1>For <span class="gold">Lin Lae<br>Yati Tun</span></h1>
+  <div class="rule"></div>
+  <p class="lead">Some days deserve a little extra sparkle. Today is one of them.</p>
+  <button class="btn" onclick="document.querySelector('#surprise').scrollIntoView({behavior:'smooth'})">OPEN YOUR SURPRISE&nbsp; ✦</button>
+  <div class="eyebrow" style="margin-top:28px;letter-spacing:.2em">07 · 11 · A special day</div>
+ </div>
+</section>
+<section id="surprise">
+ <div class="wrap">
+  <div class="eyebrow">A message, just for you</div>
+  <h2>One little <span class="gold">surprise</span></h2>
+  <p class="lead">Tap the envelope to reveal your birthday message.</p>
+  <button class="envelope" aria-label="Open birthday letter" onclick="openLetter()"><span>✦</span></button>
+  <div id="letter" class="note hidden fade">
+   <p class="gold" style="font-size:25px">Happy Birthday, Lin Lae Yati Tun!</p>
+   <p>Wishing you a day filled with happiness, laughter, and beautiful little moments. May the year ahead bring you new memories, kind people, and many reasons to smile.</p>
+   <p>Keep shining in your own way. You deserve a wonderful birthday and a lovely year ahead.</p>
+   <p class="gold" style="font-size:16px">With warm wishes, Thi Ha Thu ✦</p>
+  </div>
+ </div>
+</section>
+<section id="memories">
+ <div class="wrap">
+  <div class="eyebrow">Little moments · Lovely memories</div>
+  <h2>Four <span class="gold">frames</span>, many memories</h2>
+  <p class="lead">A few favourite moments, kept in one little place.</p>
+  <div class="gallery">
+   <div class="photo"><img src="photo1.jpg" alt="Memory 1" onerror="this.style.display='none'"><div class="placeholder">ADD PHOTO 01</div></div>
+   <div class="photo"><img src="photo2.jpg" alt="Memory 2" onerror="this.style.display='none'"><div class="placeholder">ADD PHOTO 02</div></div>
+   <div class="photo"><img src="photo3.jpg" alt="Memory 3" onerror="this.style.display='none'"><div class="placeholder">ADD PHOTO 03</div></div>
+   <div class="photo"><img src="photo4.jpg" alt="Memory 4" onerror="this.style.display='none'"><div class="placeholder">ADD PHOTO 04</div></div>
+  </div>
+ </div>
+</section>
+<section id="final">
+ <div class="wrap hero-card">
+  <div class="eyebrow">The last little thing</div>
+  <span class="final-gift">🎁</span>
+  <h2>Make a <span class="gold">wish</span></h2>
+  <p class="lead">May all the good things find their way to you. Have the loveliest birthday!</p>
+  <button class="btn" onclick="celebrate()">ONE MORE SURPRISE ✦</button>
+  <p id="finalMessage" class="gold hidden" style="font-size:21px;margin-top:25px">You are one of a kind. Keep shining! ✨</p>
+ </div>
+</section>
+</main>
+<footer>MADE WITH CARE · FOR LIN LAE YATI TUN</footer>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<65;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*4)+'s';s.style.opacity=(.15+Math.random()*.6);stars.appendChild(s)}
+function openLetter(){document.getElementById('letter').classList.remove('hidden');document.getElementById('letter').scrollIntoView({behavior:'smooth',block:'center'})}
+function celebrate(){
+ document.getElementById('finalMessage').classList.remove('hidden');
+ const c=document.getElementById('confetti'),ctx=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;
+ const bits=Array.from({length:130},()=>({x:Math.random()*c.width,y:-Math.random()*c.height,v:2+Math.random()*4,r:2+Math.random()*4,a:Math.random()*6.28}));
+ let frames=0;function draw(){ctx.clearRect(0,0,c.width,c.height);bits.forEach(b=>{b.y+=b.v;b.x+=Math.sin(b.y/24);ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.a);ctx.fillStyle=['#e8c98b','#c6a7e8','#fff1d6'][Math.floor(Math.random()*3)];ctx.fillRect(-b.r,-b.r,b.r*2,b.r*2);ctx.restore()});if(++frames<180)requestAnimationFrame(draw);else ctx.clearRect(0,0,c.width,c.height)}draw();
+}
+</script>
+</body>
+</html>
